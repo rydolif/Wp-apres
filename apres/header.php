@@ -22,7 +22,7 @@
 			<div class="header__container">
 
 				<a href="<?php echo get_home_url(); ?>" class="header__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
 				</a>
 	
 				<nav class="header__nav">
