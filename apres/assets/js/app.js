@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 					if (error === 0) {
 						item.classList.add('_sending');
-						let response = await fetch('sendmail.php', {
+						let response = await fetch('/wp-content/themes/apres/assets/sendmail.php', {
 							method: 'POST',
 							body: formData
 						});

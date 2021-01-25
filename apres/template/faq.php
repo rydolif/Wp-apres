@@ -13,7 +13,6 @@
 
 			<h2 class="faq__title h2">Faq</h2>
 
-			
 			<?php if( have_rows('faq') ): ?>
 				<div class="faq__accordion">
 					<?php while( have_rows('faq') ): the_row();

@@ -20,7 +20,7 @@
 			</div>
 
 			<div class="form__item">
-				<input type="email" name="mail" placeholder="Poczta" class="form__input _req">
+				<input type="email" name="email" placeholder="Poczta" class="form__input _req">
 			</div> 
 
 			<div class="form__item">
@@ -31,7 +31,7 @@
 			</div>
 
 			<div class="form__btn">
-				<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
+				<button type="submit" class="btn form__btn_button" name="submit">Wyślij</button>
 			</div>
 
 	</form>
@@ -58,7 +58,7 @@
 			</div>
 
 			<div class="form__item">
-				<input type="email" name="mail" placeholder="Poczta" class="form__input _req">
+				<input type="email" name="email" placeholder="Poczta" class="form__input _req">
 			</div> 
 
 			<div class="form__item">
@@ -69,7 +69,7 @@
 			</div>
 
 			<div class="form__btn">
-				<button type="submit" class="btn form__btn_button" name="submit">Отправить</button>
+				<button type="submit" class="btn form__btn_button" name="submit">Wyślij</button>
 			</div>
 
 	</form>
@@ -82,8 +82,8 @@
 			<span></span>
 		</button>
 
-		<h3>Спасибо за доверие!</h3>
-		<p>Мы обязательно с вами свяжемся!</p>
+		<h3>DZIĘKUJEMY ZA ZAUFANIE</h3>
+		<p>Skontaktujemy się z Wami!</p>
 	</div>
 
 </div>

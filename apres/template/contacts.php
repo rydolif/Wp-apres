@@ -94,11 +94,11 @@
 						<div class="contacts__form_line">
 							<div class="contacts__form_item form__item">
 								<label for="contactsTel">Telefon</label>
-								<input id="contactsTel" type="text" name="tel" class="form__input _req">
+								<input id="contactsTel" type="phone" name="phone" class="form__input _req">
 							</div>
 							<div class="contacts__form_item form__item">
 								<label for="contactsEmail">Email</label>
-								<input id="contactsEmail" type="text" name="mail" class="form__input _req">
+								<input id="contactsEmail" type="email" name="email" class="form__input _req">
 							</div>
 						</div>
 						<div class="contacts__form_btn">

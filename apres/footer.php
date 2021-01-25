@@ -65,7 +65,7 @@
 						Bądź na bieżąco z najnowszymi wiadomościami
 					</p>
 					<p class="footer__form_line">
-						<input type="email" placeholder="Wprowadź swój email adress" class="_req">
+						<input type="email" name="email" placeholder="Wprowadź swój email adress" class="_req">
 					</p>
 					<div class="footer__form_btn">
 						<button class="btn">Wysłać</button>
