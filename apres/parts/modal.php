@@ -21,12 +21,20 @@
 
 			<div class="form__item">
 				<input type="email" name="email" placeholder="Poczta" class="form__input _req">
-			</div> 
+			</div>
 
 			<div class="form__item">
 				<div class="form__checkbox">
 					<input id="formAgreement3" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-					<label for="formAgreement3" class="form__checkbox_label"><span>Wyrażam zgodę na  <a href="#">przetwarzanie danych osobowych</a></span></label>
+					<label for="formAgreement3" class="form__checkbox_label">
+						<span>
+							Potwierdzam, że zapoznałem (-am) się z 
+							<a href="<?php echo get_home_url(); ?>/cookies" target="_blank">
+								Klauzulą informacyjną dotyczącą przetwarzania danych
+							</a>
+							osobowych przez APRES Technology Damian Pilarski i wyrażam zgodę na kontakt w celu przedstawienia oferty.
+						</span>
+					</label>
 				</div>
 			</div>
 
@@ -63,8 +71,17 @@
 
 			<div class="form__item">
 				<div class="form__checkbox">
-					<input id="formAgreement3" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
-					<label for="formAgreement3" class="form__checkbox_label"><span>Wyrażam zgodę na  <a href="#">przetwarzanie danych osobowych</a></span></label>
+					<input id="formAgreement8" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+					<label for="formAgreement8" class="form__checkbox_label">
+						<span>
+							Potwierdzam, że zapoznałem (-am) się z 
+							<a href="<?php echo get_home_url(); ?>/cookies" target="_blank">
+								Klauzulą informacyjną dotyczącą przetwarzania danych
+							</a>
+							osobowych przez APRES Technology Damian Pilarski i wyrażam zgodę na kontakt w celu 
+							przedstawienia oferty.
+						</span>
+					</label>
 				</div>
 			</div>
 

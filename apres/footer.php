@@ -67,6 +67,20 @@
 					<p class="footer__form_line">
 						<input type="email" name="email" placeholder="Wprowadź swój email adress" class="_req">
 					</p>
+					<div class="form__item">
+						<div class="form__checkbox">
+							<input id="formAgreement12" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+							<label for="formAgreement12" class="form__checkbox_label">
+								<span>
+									Potwierdzam, że zapoznałem (-am) się z 
+									<a href="<?php echo get_home_url(); ?>/cookies" target="_blank">
+										Klauzulą informacyjną dotyczącą przetwarzania danych
+									</a>
+									osobowych przez APRES Technology Damian Pilarski i wyrażam zgodę na kontakt w celu przedstawienia oferty.
+								</span>
+							</label>
+						</div>
+					</div>
 					<div class="footer__form_btn">
 						<button class="btn">Wysłać</button>
 					</div>

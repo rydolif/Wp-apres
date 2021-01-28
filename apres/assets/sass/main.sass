@@ -412,12 +412,12 @@
 
 
 .hero
-	+cover
-	background-image: url(../img/hero__bg.png)
+	position: relative
 	background-color: $black
 	padding-top: 200px
 	color: #ffffff
 	margin-top: 70px
+	z-index: 2
 
 	+r(1200)
 		padding-top: 140px
@@ -429,6 +429,23 @@
 	+r(767)
 		padding-top: 60px
 		padding-bottom: 20px
+
+	&::before
+		content: ''
+		+cover
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		max-width: 100%
+		max-height: 100%
+		background-image: url(../img/hero__bg.png)
+		animation: hero 12s linear infinite
+		z-index: -1
+
+	&__container
+		z-index: 2
 
 	&__h1
 		margin-bottom: 95px
@@ -559,6 +576,7 @@
 .info
 	padding: 200px 0 70px
 	background-color: $bg
+	z-index: 3
 
 	+r(1200)
 		padding-top: 140px
@@ -992,11 +1010,10 @@
 			color: #b5acac
 			font-size: 14px
 			margin-bottom: 5px
-		
+
 		input
 			color: $black
 			border-bottom-color: #B5ACAC
-
 
 	&__map
 		width: 100%
@@ -1564,6 +1581,16 @@
 		+r(992)
 			margin: 0 auto 25px
 
+		label
+			span
+				font-size: 12px
+
+				a
+					color: #ffffff
+
+					&:hover
+						color: $accent
+
 		&_line
 			position: relative
 			margin-bottom: 30px
@@ -1688,6 +1715,9 @@
 		margin-bottom: 20px
 		text-align: center
 		font-weight: 600
+
+	input
+		color: $black !important
 
 
 .form
@@ -1911,6 +1941,7 @@
 		+r(782)
 			top: 46px
 
+
 #wpadminbar
 		+r(600)
 			position: fixed
@@ -1986,7 +2017,7 @@
 		justify-content: space-around
 		align-items: center
 		flex-wrap: wrap
-		margin-bottom: 65px
+		margin-bottom: 85px
 
 		+r(992)
 			margin-bottom: 20px
@@ -2104,10 +2135,11 @@
 
 		&_item
 			display: block
+			text-align: center
 
 		img
 			width: auto
-			max-width: 100%
+			max-width: 90%
 			max-height: 100px
 
 	&__btn
@@ -2131,7 +2163,13 @@
 			font-size: 16px
 
 
-
+@keyframes hero
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.08)
+	100%
+		transform: scale(1)
 
 
 

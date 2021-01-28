@@ -16,7 +16,6 @@
 				<div class="oferta__list tabs__list">
 					<div class="oferta__item oferta__item--one oferta__item--active tabs__item">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/about__list_img1.png" alt="" class="oferta__item_img">
-						
 						<div class="oferta__item_content">
 							<h3>Panele fotowoltaiczne</h3>
 							<p>
@@ -45,10 +44,12 @@
 						<div class="oferta__item_content">
 							<h3> Systemy montażowe oraz zabezpieczenia elektryczne</h3>
 							<p>
-								Panele wykorzystywane w
-								naszych instalacjach produkowane są
-								przez najlepszych i najbardziej
-								uznanych producentów na świecie.
+								Podstawą dobrze
+								wykonanej instalacją są
+								odpowiednie systemy montażowe
+								oraz zabezpieczenia elektryczne.
+								Korzystamy ze sprawdzonych
+								polskich producentów!
 							</p>
 						</div>
 					</div>
@@ -58,39 +59,36 @@
 					<div class="oferta__wrap tabs__wrap">
 						<div class="oferta__logo_list">
 							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo1.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/risenenergy.png" alt="">
 							</a>
 							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo2.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/LG.png" alt="">
 							</a>
 							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo3.jpg" alt="">
-							</a>
-						</div>
-					</div>
-					<div class="oferta__wrap tabs__wrap">
-						<div class="oferta__logo_list">
-							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo2.jpg" alt="">
-							</a>
-							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo1.jpg" alt="">
-							</a>
-							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo3.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Qcells.png" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="oferta__wrap tabs__wrap">
 						<div class="oferta__logo_list">
 							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo1.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Fronius.png" alt="">
 							</a>
 							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo3.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/solaredge.png" alt="">
 							</a>
 							<a href="#" class="oferta__logo_item">
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta__logo2.jpg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Sofarsolar.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="oferta__wrap tabs__wrap">
+						<div class="oferta__logo_list">
+							<a href="#" class="oferta__logo_item">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Corab.png" alt="">
+							</a>
+							<a href="#" class="oferta__logo_item">
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Dehn.png" alt="">
 							</a>
 						</div>
 					</div>

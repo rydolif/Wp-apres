@@ -53,12 +53,18 @@
 						</svg>
 						<p class="hero__list_title">jakość jest najważniejsza</p>
 						<p class="hero__list_text">
-							Zdajemy sobie sprawę że nasza 
-							planeta jest dla nas tylko jedna. 
-							Dlatego zależy nam na promocji 
-							odnawialnych źródeł energii oraz 
-							podwyższaniu jakości naszego 
-							życia
+							Przy każdej inwestycji
+							wymagana jest przejrzystość
+							działania i kompleksowa
+							obsługa. Konsultacje.
+							Projekt. Montaż.
+							Uruchomienie i zgłoszenie
+							do zakładu energetycznego.
+							Dzięki całościowemu
+							podejściu, klient posiada
+							pełną informację dotyczącą
+							przebiegu procesu
+							inwestycyjnego
 						</p>
 					</div>
 					<div class="hero__list_item">
@@ -75,12 +81,15 @@
 						</svg>
 						<p class="hero__list_title">przejrzystość i uczciwość</p>
 						<p class="hero__list_text">
-							Zdajemy sobie sprawę że nasza 
-							planeta jest dla nas tylko jedna. 
-							Dlatego zależy nam na promocji 
-							odnawialnych źródeł energii oraz 
-							podwyższaniu jakości naszego 
-							życia
+						Niezawodni partnerzy to
+						mniej zmartwień! Przy
+						dostarczaniu komponentów
+						dla każdej inwestycji
+						korzystamy wyłącznie z
+						najwyższej jakości
+						podzespołów. Mamy
+						pewność, że instalacje będą
+						niezawodne przez lata.
 						</p>
 					</div>
 				</div>
@@ -126,15 +135,14 @@
 				<div class="info__img_step info__img_step--two">
 					<div class="info__img_num">2</div>
 					<div class="info__img_text">
-						<b>Moduły fotowoltaiczne:</b> Generują energie elektryczną prądu stałego z promieni słonecznych 
-						docierających do Twojego dachu
+						<b>Falownik:</b>
+						Przemienia prąd stały na prąd zmienny, który możesz wykorzystać w swojej instalacji domowej 
 					</div>
 				</div>
 				<div class="info__img_step info__img_step--three">
 					<div class="info__img_num">3</div>
 					<div class="info__img_text">
-						<b>Moduły fotowoltaiczne:</b> Generują energie elektryczną prądu stałego z promieni słonecznych 
-						docierających do Twojego dachu
+						<b>Licznik dwukierunkowy:</b> Umożliwia rozliczanie bilansu produkcji energii z zakładem energetycznym
 					</div>
 				</div>
 			</div>
@@ -157,23 +165,23 @@
 						
 						<div class="schedule__info">
 							<p>
-								<span>Мощність установки: </span>
+								<span>Moc instalacji: </span>
 								<b id="schedulePower">2,3 kWp</b>
 							</p>
 							<p>
-								<span>Оріентовочна ціна за установку: </span>
+								<span>Koszt instalacji: </span>
 								<b id="schedulePrice">12 333 zł</b>
 							</p>
 							<p>
-								<span>Економія на рік: </span>
+								<span>Oszczędność na rok: </span>
 								<b id="scheduleEoknomy">1 090 zł</b>
 							</p>
 							<p>
-								<span>Річне виробництво енергії: </span>
+								<span>Produkcja roczna energii: </span>
 								<b id="scheduleYear">2 208 kWh</b>
 							</p>
 							<p>
-								<span>Зниження викидів CO<sub>2</sub>: </span>
+								<span>Zmniejszenie Emisji CO<sub>2</sub>: </span>
 								<b id="schedulePayback">2347,1</b>
 							</p>
 						</div>
@@ -416,7 +424,8 @@
 					<div class="project__item_desc">
 						<p class="project__item_title">Bezpłatna konsultacja</p>
 						<p class="project__item_text">
-							Otrzymasz od nas wstępny projekt wraz z informacjami na temat użytych komponentów
+						Skontaktuj się z nami poprzez formularz kontaktowy lub pod nr tel:XXXXXXXXX, 
+						aby dowiedzieć się więcej o swojej instalacji fotowoltaicznej
 						</p>
 					</div>
 					<div class="project__item_img">
@@ -443,7 +452,7 @@
 					<div class="project__item_desc">
 						<p class="project__item_title">Finansowanie</p>
 						<p class="project__item_text">
-							Otrzymasz od nas wstępny projekt wraz z informacjami na temat użytych komponentów
+							Na tym etapie podpiszemy umowę oraz pomożemy w załatwieniu kredytu, czy uzyskaniu dofinansowania
 						</p>
 					</div>
 					<div class="project__item_img">
@@ -456,7 +465,7 @@
 					<div class="project__item_desc">
 						<p class="project__item_title">Montaż</p>
 						<p class="project__item_text">
-							Otrzymasz od nas wstępny projekt wraz z informacjami na temat użytych komponentów
+							Nasi instalatorzy wykonają montaż, uruchomienie instalacji oraz przeszkolą Państwa z zakresu obsługi 
 						</p>
 					</div>
 					<div class="project__item_img">
@@ -469,7 +478,7 @@
 					<div class="project__item_desc">
 						<p class="project__item_title">Produkcja własnego prądu/Pomoc</p>
 						<p class="project__item_text">
-							Otrzymasz od nas wstępny projekt wraz z informacjami na temat użytych komponentów
+							Mogą się już Państwo cieszyć niższymi opłatami za prąd oraz liczyć na naszą pomoc
 						</p>
 					</div>
 					<div class="project__item_img">

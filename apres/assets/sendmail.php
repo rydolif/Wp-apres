@@ -13,14 +13,14 @@
 	$mail->IsHTML(true);
 
 	//От каго письмо
-	$mail->setFrom('rudolifrudolif@gmail.com', 'Стартовый макет');
+	$mail->setFrom('biuro@apres-technology.pl', 'ApresTechnology');
 	//Кому отправить
-	$mail->addAddress('rudolifrudolif@gmail.com');
+	$mail->addAddress('biuro@apres-technology.pl');
 	//Тема письма
-	$mail->Subject = ('Привет это тест отправки формы');
+	$mail->Subject = ('Cześć, to test wysyłki formy');
 
 	//Тело письма
-	$body = '<h1>Заголовок письма</h1>';
+	$body = '<h1>List zwrotny</h1>';
 
 	if(trim(!empty($_POST['name']))) {
 		$body.='<p><strong>Imie: </strong>' . $_POST['name']. '</p>';
@@ -39,9 +39,9 @@
 
 	//Отправляем
 	if (!$mail->send()) {
-		$message = 'Ошибка';
+		$message = 'Błąd';
 	} else {
-		$massage = 'Данные отправлены!';
+		$massage = 'Dane zostały wysłane!';
 	}
 
 	$response = ['message' => $massage];
