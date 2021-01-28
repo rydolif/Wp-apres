@@ -58,36 +58,36 @@
 				<div class="oferta__logo">
 					<div class="oferta__wrap tabs__wrap">
 						<div class="oferta__logo_list">
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--risen">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/risenenergy.png" alt="">
 							</a>
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--lg">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/LG.png" alt="">
 							</a>
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--qcells">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Qcells.png" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="oferta__wrap tabs__wrap">
 						<div class="oferta__logo_list">
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--fronius">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Fronius.png" alt="">
 							</a>
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--solaredge">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/solaredge.png" alt="">
 							</a>
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--SolarEdgeINV">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Sofarsolar.png" alt="">
 							</a>
 						</div>
 					</div>
 					<div class="oferta__wrap tabs__wrap">
 						<div class="oferta__logo_list">
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--corab">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Corab.png" alt="">
 							</a>
-							<a href="#" class="oferta__logo_item">
+							<a href="#" class="oferta__logo_item modal--DEHN">
 								<img src="<?php echo get_template_directory_uri(); ?>/assets/img/oferta/Dehn.png" alt="">
 							</a>
 						</div>
@@ -102,6 +102,8 @@
 		</section>
 
 	</main>
+
+	<?php get_template_part( 'parts/oferta' ); ?>
 
 <?php
 	get_footer();
