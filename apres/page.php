@@ -3,6 +3,8 @@
 ?>
 
 	<section class="hero">
+		<div class="hero__before">
+		</div>
 		<div class="hero__container container">
 			
 			<h1 class="hero__h1 h1">
@@ -12,18 +14,6 @@
 			</h1>
 
 			<div class="hero__wrap">
-				<p class="hero__subtitle">Perevagi naszą firmę</p>
-				<div class="hero__down click">
-					<a href="#info">
-						<span>przewiń w dół </span>
-						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0)">
-							<path d="M11.9813 0C8.08868 0 4.92188 3.16681 4.92188 7.05945V16.9406C4.92188 20.8332 8.08868 24 11.9813 24C15.874 24 19.0408 20.8332 19.0408 16.9406V7.05945C19.0408 3.16681 15.874 0 11.9813 0ZM17.6008 16.9406C17.6008 20.0391 15.0798 22.5601 11.9813 22.5601C8.88281 22.5601 6.36182 20.0391 6.36182 16.9406V7.05945C6.36182 3.96094 8.88281 1.43994 11.9813 1.43994C15.0798 1.43994 17.6008 3.96094 17.6008 7.05945V16.9406Z" fill="white"/>
-							<path d="M11.9814 4.77429C11.5837 4.77429 11.2615 5.09656 11.2615 5.49426V8.80811C11.2615 9.20563 11.5837 9.52808 11.9814 9.52808C12.379 9.52808 12.7014 9.20563 12.7014 8.80811V5.49426C12.7014 5.09656 12.3792 4.77429 11.9814 4.77429Z" fill="white"/>
-							</g>
-						</svg>
-					</a>
-				</div>
 				<div class="hero__list">
 					<div class="hero__list_item">
 						<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +172,7 @@
 							</p>
 							<p>
 								<span>Zmniejszenie Emisji CO<sub>2</sub>: </span>
-								<b id="schedulePayback">2347,1</b>
+								<b id="schedulePayback">2347,1 kg Co2/rok</b>
 							</p>
 						</div>
 					</div>
@@ -218,7 +208,7 @@
 							schedulePrice.textContent = '59 845 zł';
 							scheduleYear.textContent = '15 168 kWp';
 							scheduleEoknomy.textContent = '7 487 zł';
-							schedulePayback.textContent = '16123,6';
+							schedulePayback.textContent = '16123,6 kg Co2/rok';
 
 							chartFunc(-59845, 7487);
 						}
@@ -230,7 +220,7 @@
 							schedulePrice.textContent = '57 710 zł';
 							scheduleYear.textContent = '14 496 kWp';
 							scheduleEoknomy.textContent = '7 155 zł';
-							schedulePayback.textContent = '15409,2';
+							schedulePayback.textContent = '15409,2 kg Co2/rok';
 
 							chartFunc(-57710, 7155);
 						}
@@ -242,7 +232,7 @@
 							schedulePrice.textContent = '53 776 zł';
 							scheduleYear.textContent = '13 248 kWp';
 							scheduleEoknomy.textContent = '6 539 zł';
-							schedulePayback.textContent = '14082,6';
+							schedulePayback.textContent = '14082,6 kg Co2/rok';
 
 							chartFunc(-53776, 6539);
 						}
@@ -254,7 +244,7 @@
 							schedulePrice.textContent = '47 940 zł';
 							scheduleYear.textContent = '11 904 kWp';
 							scheduleEoknomy.textContent = '5 876 zł';
-							schedulePayback.textContent = '12654';
+							schedulePayback.textContent = '12654 kg Co2/rok';
 
 							chartFunc(-47940, 5876);
 						}
@@ -266,7 +256,7 @@
 							schedulePrice.textContent = '44 574 zł';
 							scheduleYear.textContent = '10 944 kWp';
 							scheduleEoknomy.textContent = '5 402 zł';
-							schedulePayback.textContent = '11633,5';
+							schedulePayback.textContent = '11633,5 kg Co2/rok';
 
 							chartFunc(-44574, 5402);
 						}
@@ -278,7 +268,7 @@
 							schedulePrice.textContent = '40 047 zł';
 							scheduleYear.textContent = '9 600 kWp';
 							scheduleEoknomy.textContent = '4 739 zł';
-							schedulePayback.textContent = '10204,8';
+							schedulePayback.textContent = '10204,8 kg Co2/rok';
 
 							chartFunc(-40047, 4739);
 						}
@@ -290,7 +280,7 @@
 							schedulePrice.textContent = '36 958 zł';
 							scheduleYear.textContent = '8 640 kWp';
 							scheduleEoknomy.textContent = '4 265 zł';
-							schedulePayback.textContent = '9184,3';
+							schedulePayback.textContent = '9184,3 kg Co2/rok';
 
 							chartFunc(-36958, 4265);
 						}
@@ -302,7 +292,7 @@
 							schedulePrice.textContent = '34 758 zł';
 							scheduleYear.textContent = '7 949 kWp';
 							scheduleEoknomy.textContent = '3 924 zł';
-							schedulePayback.textContent = '8449,6';
+							schedulePayback.textContent = '8449,6 kg Co2/rok';
 
 							chartFunc(-34758, 3924);
 						}
@@ -314,7 +304,7 @@
 							schedulePrice.textContent = '27 172 zł';
 							scheduleYear.textContent = '6 240 kWp';
 							scheduleEoknomy.textContent = '3 080 zł';
-							schedulePayback.textContent = '6633,1';
+							schedulePayback.textContent = '6633,1 kg Co2/rok';
 
 							chartFunc(-27172, 3080);
 						}
@@ -326,7 +316,7 @@
 							schedulePrice.textContent = '24 090 zł';
 							scheduleYear.textContent = '5 280 kWp';
 							scheduleEoknomy.textContent = '2 606 zł';
-							schedulePayback.textContent = '5612,6';
+							schedulePayback.textContent = '5612,6 kg Co2/rok';
 
 							chartFunc(-24090, 2606);
 						}
@@ -338,7 +328,7 @@
 							schedulePrice.textContent = '22 911 zł';
 							scheduleYear.textContent = '4 320 kWp';
 							scheduleEoknomy.textContent = '2 132 zł';
-							schedulePayback.textContent = '4592,2';
+							schedulePayback.textContent = '4592,2 kg Co2/rok';
 
 							chartFunc(-22911, 2132);
 						}
@@ -350,7 +340,7 @@
 							schedulePrice.textContent = '17 768 zł';
 							scheduleYear.textContent = '3 312 kWp';
 							scheduleEoknomy.textContent = '1 635 zł';
-							schedulePayback.textContent = '3520,7';
+							schedulePayback.textContent = '3520,7 kg Co2/rok';
 
 							chartFunc(-17768, 1635);
 						}
@@ -362,7 +352,7 @@
 							schedulePrice.textContent = '12 333 zł';
 							scheduleYear.textContent = '2 208 kWp';
 							scheduleEoknomy.textContent = '1 090 zł';
-							schedulePayback.textContent = '2347,1';
+							schedulePayback.textContent = '2347,1 kg Co2/rok';
 
 							chartFunc(-12333, 1090);
 						}
@@ -396,12 +386,27 @@
 												data: arr
 										}]
 								},
-
 								// Configuration options go here
 								options: {
 									legend: {
 										display: false,
 									},
+									scales: {
+										xAxes: [{
+											display: true,
+											scaleLabel: {
+												display: true,
+												labelString: 'Rok'
+											}
+										}],
+										yAxes: [{
+											display: true,
+											scaleLabel: {
+												display: true,
+												labelString: 'PLN'
+											},
+										}]
+									}
 								}
 						});
 					};
@@ -424,7 +429,7 @@
 					<div class="project__item_desc">
 						<p class="project__item_title">Bezpłatna konsultacja</p>
 						<p class="project__item_text">
-						Skontaktuj się z nami poprzez formularz kontaktowy lub pod nr tel:XXXXXXXXX, 
+						Skontaktuj się z nami poprzez formularz kontaktowy lub pod nr tel:+48502660079, 
 						aby dowiedzieć się więcej o swojej instalacji fotowoltaicznej
 						</p>
 					</div>
@@ -494,3 +499,8 @@
 
 <?php
 	get_footer();
+
+
+
+
+

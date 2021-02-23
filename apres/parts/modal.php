@@ -12,7 +12,7 @@
 			<input type="hidden" name="subject" value="Skontaktuj się z nami">
 
 			<div class="form__item">
-				<input type="text" name="name" placeholder="Nazwa" class="form__input _req">
+				<input type="text" name="name" placeholder="Imię i nazwisko" class="form__input _req">
 			</div>
 
 			<div class="form__item">
@@ -20,12 +20,12 @@
 			</div>
 
 			<div class="form__item">
-				<input type="email" name="email" placeholder="Poczta" class="form__input _req">
+				<input type="email" name="email" placeholder="E-mail" class="form__input _req">
 			</div>
 
 			<div class="form__item">
 				<div class="form__checkbox">
-					<input id="formAgreement3" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+					<input id="formAgreement3" type="checkbox" name="agreement" class="form__checkbox_input _req">
 					<label for="formAgreement3" class="form__checkbox_label">
 						<span>
 							Potwierdzam, że zapoznałem (-am) się z 
@@ -71,7 +71,7 @@
 
 			<div class="form__item">
 				<div class="form__checkbox">
-					<input id="formAgreement8" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+					<input id="formAgreement8" type="checkbox" name="agreement" class="form__checkbox_input _req">
 					<label for="formAgreement8" class="form__checkbox_label">
 						<span>
 							Potwierdzam, że zapoznałem (-am) się z 

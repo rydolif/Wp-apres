@@ -23,13 +23,20 @@
 						while ( have_rows('list') ) : the_row(); ?>
 
 							<div class="news__grid_item">
-								<div class="news__grid_img">
+								<a href="<?php the_sub_field('img'); ?>" class="news__grid_img" data-fancybox="gallery">
 									<img src="<?php the_sub_field('img'); ?>" alt="">
-								</div>
+								</a>
 								<p class="news__grid_subtitle"><?php the_sub_field('title'); ?></p>
 								<p class="news__grid_desc">
 									<?php the_sub_field('text'); ?>
 								</p>
+								<?php if( have_rows('file') ): ?>
+									<?php while( have_rows('file') ): the_row(); 
+										$file_item = get_sub_field('file_item');
+										?>
+										<a href="<?php echo $file_item; ?>" data-fancybox="gallery" class="news__grid_item--gallery"></a>
+									<?php endwhile; ?>
+								<?php endif; ?>
 							</div>
 
 							<?php
@@ -62,7 +69,6 @@
 		var my_repeater = true;
 		
 		function my_repeater_show() {
-			
 			// make ajax request
 			jQuery.post(
 				my_repeater_ajax_url, {
@@ -84,10 +90,35 @@
 						// this ID must match the id of the show more link
 						jQuery('#gallery-load-more').css('display', 'none');
 					}
+					upgradeFunction();
 				},
 				'json'
 			);
 		}
+
+		
+	//------------------------------NEWS ITEM---------------------------
+		function upgradeFunction() {
+				const gridItem = (gridItemSelector) => {
+					const	gridItemGallery = document.querySelectorAll(gridItemSelector);
+					let i = 1;
+
+					gridItemGallery.forEach(item => {
+						const gridItemData = item.querySelectorAll('a');
+						let block = 'gallery' + i++;
+						gridItemData.forEach(elem => {
+							elem.setAttribute('data-fancybox', block);
+						});
+
+					});
+
+				};
+				gridItem('.news__grid_item');
+			}
+
+			upgradeFunction();
+
+
 </script>
 
 

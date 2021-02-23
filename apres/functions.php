@@ -285,13 +285,20 @@ function my_repeater_show() {
 			?>
 
 			<div class="news__grid_item">
-				<div class="news__grid_img">
+				<a href="<?php the_sub_field('img'); ?>" data-fancybox="gallery" class="news__grid_img">
 					<img src="<?php the_sub_field('img'); ?>" alt="">
-				</div>
+				</a>
 				<p class="news__grid_subtitle"><?php the_sub_field('title'); ?></p>
 				<p class="news__grid_desc">
 					<?php the_sub_field('text'); ?>
 				</p>
+				<?php if( have_rows('file') ): ?>
+					<?php while( have_rows('file') ): the_row(); 
+						$file_item = get_sub_field('file_item');
+						?>
+						<a href="<?php echo $file_item; ?>" data-fancybox="gallery" class="news__grid_item--gallery"></a>
+					<?php endwhile; ?>
+				<?php endif; ?>
 			</div>
 
 			<?php 

@@ -103,7 +103,7 @@
 						</div>
 						<div class="form__item">
 							<div class="form__checkbox">
-								<input id="formAgreement11" checked type="checkbox" name="agreement" class="form__checkbox_input _req">
+								<input id="formAgreement11" type="checkbox" name="agreement" class="form__checkbox_input _req">
 								<label for="formAgreement11" class="form__checkbox_label">
 									<span>
 										Potwierdzam, że zapoznałem (-am) się z 

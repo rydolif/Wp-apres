@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="icon" href="<?php the_field('favicon', 'option'); ?>">
 	<meta name="theme-color" content="#000">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/jquery.fancybox.min.js">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/jquery.fancybox.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 
 </head>

@@ -352,7 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		tabs('.tabs', '.tabs__item', '.tabs__wrap', 'active');
 
 
-	//----------------------TABS-JS----------------------
+	//----------------------ofertaItem-JS----------------------
 		const ofertaItem = (ofertaItemSelector) => {
 			const ofertaItem = document.querySelectorAll(ofertaItemSelector);
 			ofertaItem.forEach(item => {

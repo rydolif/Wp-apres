@@ -15,22 +15,18 @@
 
 			<div class="about__desc">
 				<p>
-					Technology to efekt długoletniej współpracy ludzi, którzy wierzą, że energooszczędność to 
-					nie tylko zysk, czy dbanie o środowisko, ale również pasja)
+				,,APRES Technology zapewnia kompleksową obsługę inwestycji w zakresie montażu systemów fotowoltaicznych 
+				dla inwestorów indywidualnych i firm. Naszą misją jest rozwój energetyki odnawialnej w Polsce oraz 
+				satysfakcja klienta.
 				</p>
 				<p>
-					`APRES Technology zapewnia 
-					kompleksową obsługę inwestycji w zakresie montażu systemów fotowoltaicznych dla inwestorów 
-					indywidualnych i firm. Naszą misją jest rozwój energetyki odnawialnej w Polsce oraz satysfakcja klienta.
+				To, czym cechuje się nasza działalność, to uczciwe podejście do klienta, techniczne wykształcenie 
+				wyższe pracowników w branży OZE, a także, jak się okaże dalej podczas zapoznawania z naszą stroną, 
+				wykorzystanie najwyższej jakości komponentów dostępnych na rynku.
 				</p>
 				<p>
-					To, czym cechuje się nasza działalność, to uczciwe podejście do klienta, techniczne 
-					wykształcenie wyższe pracowników w branży OZE, a także, jak się okaże dalej podczas 
-					zapoznawania z naszą stroną, wykorzystanie najwyższej jakości komponentów dostępnych na rynku.
-				</p>
-				<p>
-					Ze zdobytych doświadczeń wiemy, iż kontakt z klientem to podstawa, dlatego też z naszej 
-					strony doświadczycie Państwo profesjonalnego podejścia do sprawy oraz szczerości.
+				Ze zdobytych doświadczeń wiemy, iż kontakt z klientem to podstawa, dlatego też z naszej strony 
+				doświadczycie Państwo profesjonalnego podejścia do sprawy oraz szczerości.,,
 				</p>
 			</div>
 
@@ -141,9 +137,9 @@
 					<?php while( have_rows('certificates') ): the_row(); 
 						$img = get_sub_field('img');
 						?>
-							<div class="about__slider_item swiper-slide">
+							<a href="<?php echo $img; ?>" class="about__slider_item swiper-slide" data-fancybox="gallery">
 								<img src="<?php echo $img; ?>" alt="">
-							</div>
+							</a>
 
 					<?php endwhile; ?>
 
