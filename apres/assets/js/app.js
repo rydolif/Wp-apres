@@ -365,6 +365,5 @@ document.addEventListener("DOMContentLoaded", function() {
 		};
 		ofertaItem('.oferta__item');
 
-
 });
 	

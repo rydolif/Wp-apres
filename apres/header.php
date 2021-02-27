@@ -9,6 +9,7 @@
 	<link rel="icon" href="<?php the_field('favicon', 'option'); ?>">
 	<meta name="theme-color" content="#000">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/libs/jquery.fancybox.min.css">
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/lazy-line-painter-1.9.6.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 
 </head>
@@ -16,6 +17,63 @@
 <?php wp_head(); ?>
 
 <body>
+
+	<style>
+		.preloader	 {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 9999;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			animation: preloader 4s linear;
+			opacity: 0;
+			visibility: hidden;
+			transition: all .6s;
+		}
+
+		@keyframes preloader {
+			0% {opacity: 1;visibility: visible;}
+			70% {opacity: 1;visibility: visible;}
+			95% {opacity: 0; visibility: hidden;}
+			100%{opacity: 0; z-index: -1000; visibility: hidden;}
+		}
+
+		#logo {
+			max-width: 60vw;
+			max-height: 60vh;
+			position: relative;
+			overflow: visible;
+			transition all .6s;
+		}
+	</style>
+
+	<script type="text/javascript">
+		(function(){ 
+			document.onreadystatechange = () => {
+				if (document.readyState === 'complete') {
+					let el = document.querySelector('#logo');
+					let myAnimation = new LazyLinePainter(el, {
+						"ease": "easeLinear",
+						"strokeWidth": 2.9,
+						"strokeOpacity": 1,
+						"strokeColor": "#F3A60A",
+						"strokeCap": "round"}); 
+					myAnimation.paint(); 
+				}
+			}
+		})();
+	</script>
+
+	<div class="preloader">
+		<svg viewBox="0 0 188 202" fill="none" xmlns="http://www.w3.org/2000/svg" data-llp-composed="true" id="logo" class="lazy-line-painter">
+			<path d="M160.606 27.6676C142.611 9.67021 119.246 0 94 0C69.0229 0 45.3886 9.67021 27.3943 27.6676C9.66857 45.3963 0 69.0346 0 94.016C0 118.997 9.66857 142.636 27.6629 160.633L69.0229 202L129.72 141.293C139.12 131.891 144.491 119.266 144.491 105.835C144.491 92.4043 139.389 79.7793 129.72 70.3777L94 34.383L58.5486 70.109C49.1486 79.5106 43.7771 92.1356 43.7771 105.566C43.7771 118.997 48.88 131.622 58.5486 141.024L87.2857 169.766L68.7543 188.032L34.3771 153.649C18.5314 137.801 9.66857 116.58 9.66857 94.016C9.66857 71.4521 18.5314 50.2314 34.3771 34.383C50.2229 18.5346 71.44 9.67021 94 9.67021C116.56 9.67021 137.777 18.5346 153.623 34.383C169.469 50.2314 178.331 71.4521 178.331 94.016C178.331 116.58 169.469 137.801 153.623 153.649L112.263 195.016L119.246 202L160.606 160.633C178.331 142.636 188 119.266 188 94.016C188 69.0346 178.331 45.3963 160.606 27.6676ZM89.1657 83.5399L73.8571 68.2287L89.1657 52.9176V83.5399ZM122.737 134.309L98.8343 158.215V121.684L131.063 89.4495C133.211 94.5532 134.554 99.9255 134.554 105.835C134.554 116.311 130.257 126.519 122.737 134.309ZM125.96 80.8537L98.8343 107.984V52.9176L122.737 76.8245C123.811 78.1676 124.886 79.5106 125.96 80.8537ZM65.2629 76.8245L66.8743 75.2128L89.1657 97.508V123.295L56.4 90.2553C58.28 85.4202 61.5029 80.8537 65.2629 76.8245ZM53.4457 105.566C53.4457 104.223 53.4457 102.612 53.7143 101.269L89.1657 136.726V157.947L65.2629 134.309C57.7429 126.519 53.4457 116.311 53.4457 105.566Z" fill="#F3A60A" data-llp-id="logo-0" data-llp-duration="3030" data-llp-delay="0" fill-opacity="0" style="stroke-linejoin: bevel; stroke-linecap: round;" data-llp-stroke-join="bevel" data-llp-stroke-cap="round"/>
+		</svg>
+	</div>
 
 	<header class="header">
 		<div class="container">

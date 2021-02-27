@@ -6,7 +6,7 @@
 
 			<div class="footer__col">
 				<a href="<?php echo get_home_url(); ?>" class="footer__logo">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
 				</a>
 				<div class="footer__soc">
 					<a href="<?php the_field('facebook', 'option'); ?>" target="_blank">
