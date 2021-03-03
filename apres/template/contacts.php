@@ -41,7 +41,7 @@
 								</svg>
 								<span>Email</span>
 							</p>
-							<p><a href="mailto:<?php the_field('email', 'option'); ?>">biuro@apres-tehnology.pl</a></p>
+							<p><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
 						</div>
 						<div class="contacts__list_item">
 							<p class="contacts__list_subtitle">

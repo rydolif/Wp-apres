@@ -82,7 +82,7 @@
 						</div>
 					</div>
 					<div class="footer__form_btn">
-						<button class="btn">Wysłać</button>
+						<button class="btn">Wyślij</button>
 					</div>
 				</form>
 				<p class="footer__copy"><a href="http://flex-design.pl/" target="_blank">Designed and created by Flexdesign</a></p>
