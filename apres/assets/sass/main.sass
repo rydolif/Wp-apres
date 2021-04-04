@@ -2053,68 +2053,37 @@
 
 
 .oferta
+	&__bunner
+		position: relative
+		background-image: none
+		overflow: hidden
+		z-index: 1
 
-	&__wrap
-		width: 100%
-
-	&__title
-		margin-bottom: 30px
-
-		+r(992)
-			margin-bottom: 20px
+		&_img
+			position: absolute
+			object-fit: cover
+			height: 100%
+			min-width: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
 
 	&__list
-		+transition
 		display: flex
 		justify-content: space-around
-		align-items: center
 		flex-wrap: wrap
-		margin-bottom: 85px
+		padding: 35px 0
+		gap: 15px
 
-		+r(992)
-			margin-bottom: 20px
-
-	&__item
-		+transition
-		background-color: $black
-		position: relative
-		overflow: hidden
-		border: 1px solid $black
-		padding: 30px
-		padding-top: 20%
-		width: 25%
-		color: #ffffff
-		cursor: pointer
-		margin-bottom: 10px
-		min-height: fit-content
-
-		+r(992)
-			width: 100%
-			padding-top: 20%
-
-		+r(576)
-			padding-top: 30%
-
-		+r(480)
-			padding-top: 40%
-
-		h3
-			text-transform: uppercase
-			margin-bottom: 3px
-
-		p
-			+transition
-			margin-bottom: 10px
-			opacity: 0
-
-			+r(992)
-				opacity: 1
-
-			&:last-child
-				margin-bottom: 0
-
-		b
-			text-transform: uppercase
+		&_item
+			position: relative
+			width: 340px
+			height: auto
+			overflow: hidden
+			padding: 25px 40px
+			border-radius: 5px
+			z-index: 1
 
 		&_img
 			position: absolute
@@ -2123,78 +2092,244 @@
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
+			object-fit: cover
+			z-index: -1
 
-		&_content
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			width: 80%
-			height: 80%
-
-			+r(576)
-				width: 90%
-
-		&--one
-			top: 30px
+		&_title
+			color: #fff
+			margin-bottom: 20px
+			font-size: 24px
 
 			+r(992)
-				top: 0
-
-			&.oferta__item--active
-				top: 10px
-
-				+r(992)
-					top: 0
-
-		&--two
-
-		&--three
-			top: 60px
-
-			+r(992)
-				top: 0
-
-			&.oferta__item--active
-				top: 40px
-
-				+r(992)
-					top: 0
-
-		&--active
-			width: 42%
-
-			+r(992)
-				width: 100%
-
-			p
-				opacity: 1
-
-	&__logo
-		width: 100%
-		margin-bottom: 25px
-
-		&_list
-			display: grid
-			grid-template-columns: 1fr 1fr 1fr 1fr
-			grid-gap: 15px
-
-			+r(992)
-				grid-template-columns: 1fr 1fr 1fr
+				font-size: 20px
+				margin-bottom: 10px
 
 			+r(767)
-				grid-template-columns: 1fr 1fr
+				font-size: 18px
+
+		&_text
+			color: #fff
+
+	&__wrap
+		padding: 30px 0
+
+		+r(992)
+			padding: 20px 0
 
 		&_item
-			display: block
-			text-align: center
+			display: flex
+			align-items: center
+			gap: 65px
+			padding: 30px 50px
+			background-color: #fff
+			margin-bottom: 30px
 
-		img
-			width: auto
-			max-width: 90%
-			max-height: 100px
+			+r(1200)
+				gap: 35px
+				padding: 20px 40px
+				margin-bottom: 15px
 
-	&__btn
+			+r(992)
+				gap: 20px
+				padding: 15px 30px
+
+			+r(767)
+				flex-wrap: wrap
+				flex-direction: column
+				padding: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+		&_logo
+			max-width: 220px
+
+			+r(1200)
+				width: 180px
+
+			+r(992)
+				width: 140px
+
+		&_img
+			max-width: 250px
+
+			+r(1200)
+				width: 200px
+
+			+r(992)
+				width: 160px
+
+		&_desc
+			max-width: 500px
+
+			p
+				margin-bottom: 20px
+
+				+r(992)
+					margin-bottom: 10px
+
+				&:last-child
+					margin-bottom: 0
+				
+			li
+				position: relative
+				margin-bottom: 20px
+				padding-left: 30px
+
+				+r(992)
+					padding-left: 20px
+					margin-bottom: 10px
+
+				&::before
+					content: ' ▶'
+					position: absolute
+					left: 0
+					top: 0
+
+				&:last-child
+					margin-bottom: 0
+
+	// &__wrap
+	// 	width: 100%
+
+	// &__title
+	// 	margin-bottom: 30px
+
+	// 	+r(992)
+	// 		margin-bottom: 20px
+
+	// &__list
+	// 	+transition
+	// 	display: flex
+	// 	justify-content: space-around
+	// 	align-items: center
+	// 	flex-wrap: wrap
+	// 	margin-bottom: 85px
+
+	// 	+r(992)
+	// 		margin-bottom: 20px
+
+	// &__item
+	// 	+transition
+	// 	background-color: $black
+	// 	position: relative
+	// 	overflow: hidden
+	// 	border: 1px solid $black
+	// 	padding: 30px
+	// 	padding-top: 20%
+	// 	width: 25%
+	// 	color: #ffffff
+	// 	cursor: pointer
+	// 	margin-bottom: 10px
+	// 	min-height: fit-content
+
+	// 	+r(992)
+	// 		width: 100%
+	// 		padding-top: 20%
+
+	// 	+r(576)
+	// 		padding-top: 30%
+
+	// 	+r(480)
+	// 		padding-top: 40%
+
+	// 	h3
+	// 		text-transform: uppercase
+	// 		margin-bottom: 3px
+
+	// 	p
+	// 		+transition
+	// 		margin-bottom: 10px
+	// 		opacity: 0
+
+	// 		+r(992)
+	// 			opacity: 1
+
+	// 		&:last-child
+	// 			margin-bottom: 0
+
+	// 	b
+	// 		text-transform: uppercase
+
+	// 	&_img
+	// 		position: absolute
+	// 		min-width: 100%
+	// 		min-height: 100%
+	// 		top: 50%
+	// 		left: 50%
+	// 		transform: translate(-50%, -50%)
+
+	// 	&_content
+	// 		position: absolute
+	// 		top: 50%
+	// 		left: 50%
+	// 		transform: translate(-50%, -50%)
+	// 		width: 80%
+	// 		height: 80%
+
+	// 		+r(576)
+	// 			width: 90%
+
+	// 	&--one
+	// 		top: 30px
+
+	// 		+r(992)
+	// 			top: 0
+
+	// 		&.oferta__item--active
+	// 			top: 10px
+
+	// 			+r(992)
+	// 				top: 0
+
+	// 	&--two
+
+	// 	&--three
+	// 		top: 60px
+
+	// 		+r(992)
+	// 			top: 0
+
+	// 		&.oferta__item--active
+	// 			top: 40px
+
+	// 			+r(992)
+	// 				top: 0
+
+	// 	&--active
+	// 		width: 42%
+
+	// 		+r(992)
+	// 			width: 100%
+
+	// 		p
+	// 			opacity: 1
+
+	// &__logo
+	// 	width: 100%
+	// 	margin-bottom: 25px
+
+	// 	&_list
+	// 		display: grid
+	// 		grid-template-columns: 1fr 1fr 1fr 1fr
+	// 		grid-gap: 15px
+
+	// 		+r(992)
+	// 			grid-template-columns: 1fr 1fr 1fr
+
+	// 		+r(767)
+	// 			grid-template-columns: 1fr 1fr
+
+	// 	&_item
+	// 		display: block
+	// 		text-align: center
+
+	// 	img
+	// 		width: auto
+	// 		max-width: 90%
+	// 		max-height: 100px
+
+	// &__btn
 		display: flex
 		justify-content: center
 
